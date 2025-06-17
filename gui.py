@@ -21,7 +21,7 @@ def run_analyze():
         return
 
     global last_result
-    last_result = run_analysis_or(filters)
+    last_result = run_analysis(filters)
     messagebox.showinfo("分析完成", f"共 {len(last_result)} 筆結果")
 
 def export_csv():
